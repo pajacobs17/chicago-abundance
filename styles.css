@@ -1,20 +1,20 @@
 /* ---------------------------------------------------
-   Elmwood Community Coalition — stylesheet
+   Bright Line PAC — stylesheet
    Palette, type, and layout tokens are all defined
    below in :root — change these to re-theme the site.
 --------------------------------------------------- */
 
 :root{
-  --paper: #F3EEE3;
-  --paper-shade: #EAE3D3;
-  --ink: #23281F;
-  --pine: #2B5346;
-  --pine-dark: #1D3B31;
-  --gold: #CE9B2C;
-  --brick: #A6472F;
+  --paper: #F1EFE8;
+  --paper-shade: #E6E2D6;
+  --ink: #1B2233;
+  --navy: #24345A;
+  --navy-dark: #16213D;
+  --crimson: #9C3B3B;
+  --brass: #B8912F;
 
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Spectral", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 
   --wrap: 1120px;
 }
@@ -38,17 +38,17 @@ body{
 h1, h2, h3{
   font-family: var(--font-display);
   font-weight: 600;
-  line-height: 1.12;
+  line-height: 1.14;
   margin: 0 0 0.5em;
-  color: var(--pine-dark);
+  color: var(--navy-dark);
 }
 
-h1{ font-size: clamp(2.4rem, 5vw, 3.6rem); }
-h2{ font-size: clamp(1.7rem, 3vw, 2.3rem); }
-h3{ font-size: 1.25rem; margin-bottom: 0.35em; }
+h1{ font-size: clamp(2.4rem, 5vw, 3.5rem); }
+h2{ font-size: clamp(1.7rem, 3vw, 2.2rem); }
+h3{ font-size: 1.2rem; margin-bottom: 0.35em; }
 
 p{ margin: 0 0 1em; }
-a{ color: var(--pine-dark); }
+a{ color: var(--navy-dark); }
 
 .wrap{
   max-width: var(--wrap);
@@ -67,7 +67,7 @@ a{ color: var(--pine-dark); }
   position: absolute;
   left: -999px;
   top: 0;
-  background: var(--pine-dark);
+  background: var(--navy-dark);
   color: var(--paper);
   padding: 10px 16px;
   z-index: 100;
@@ -76,14 +76,14 @@ a{ color: var(--pine-dark); }
 
 a:focus-visible,
 button:focus-visible{
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--brass);
   outline-offset: 2px;
 }
 
 /* ---------- header ---------- */
 
 .site-header{
-  border-bottom: 1px solid rgba(35,40,31,0.12);
+  border-bottom: 1px solid rgba(27,34,51,0.14);
   background: var(--paper);
   position: sticky;
   top: 0;
@@ -103,29 +103,30 @@ button:focus-visible{
   font-weight: 600;
   font-size: 1.15rem;
   text-decoration: none;
-  color: var(--pine-dark);
+  color: var(--navy-dark);
 }
+.wordmark span{ color: var(--crimson); }
 
 .primary-nav{
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 26px;
 }
 
 .primary-nav a{
   text-decoration: none;
-  font-size: 0.98rem;
+  font-size: 0.96rem;
   color: var(--ink);
 }
-.primary-nav a:hover{ color: var(--pine-dark); }
+.primary-nav a:hover{ color: var(--navy-dark); }
 
 .nav-cta{
-  background: var(--pine);
+  background: var(--navy);
   color: var(--paper) !important;
   padding: 8px 16px;
   border-radius: 3px;
 }
-.nav-cta:hover{ background: var(--pine-dark); }
+.nav-cta:hover{ background: var(--navy-dark); }
 
 .nav-toggle{
   display: none;
@@ -155,15 +156,15 @@ button:focus-visible{
 }
 
 .kicker{
-  font-size: 0.95rem;
-  color: var(--brick);
+  font-size: 0.92rem;
+  color: var(--crimson);
   margin-bottom: 0.9em;
 }
 
 .hero-lede{
   font-size: 1.15rem;
-  max-width: 46ch;
-  color: rgba(35,40,31,0.85);
+  max-width: 48ch;
+  color: rgba(27,34,51,0.85);
 }
 
 .hero-actions{
@@ -186,10 +187,10 @@ button:focus-visible{
 }
 
 .btn-primary{
-  background: var(--pine);
+  background: var(--navy);
   color: var(--paper);
 }
-.btn-primary:hover{ background: var(--pine-dark); }
+.btn-primary:hover{ background: var(--navy-dark); }
 
 .btn-ghost{
   border-color: var(--ink);
@@ -197,7 +198,7 @@ button:focus-visible{
 }
 .btn-ghost:hover{ background: var(--ink); color: var(--paper); }
 
-.hero-art svg{ width: 100%; height: auto; max-width: 380px; display: block; margin: 0 auto; }
+.hero-art svg{ width: 100%; height: auto; max-width: 360px; display: block; margin: 0 auto; }
 
 /* ---------- about ---------- */
 
@@ -210,11 +211,11 @@ button:focus-visible{
 blockquote{
   margin: 28px 0 0;
   padding-left: 22px;
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--brass);
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-style: italic;
-  color: var(--pine-dark);
+  color: var(--navy-dark);
 }
 blockquote cite{
   display: block;
@@ -222,7 +223,7 @@ blockquote cite{
   font-family: var(--font-body);
   font-style: normal;
   font-size: 0.92rem;
-  color: rgba(35,40,31,0.7);
+  color: rgba(27,34,51,0.7);
 }
 
 /* ---------- stats ---------- */
@@ -239,18 +240,18 @@ blockquote cite{
 
 .stat-num{
   font-family: var(--font-display);
-  font-size: 2.4rem;
-  color: var(--brick);
+  font-size: 2.3rem;
+  color: var(--crimson);
   font-weight: 600;
 }
 
 .stat-label{
   font-size: 0.92rem;
-  color: rgba(35,40,31,0.75);
+  color: rgba(27,34,51,0.75);
   max-width: 20ch;
 }
 
-/* ---------- programs ---------- */
+/* ---------- priorities ---------- */
 
 .programs{ padding: 56px 0 64px; }
 
@@ -267,18 +268,18 @@ blockquote cite{
   grid-template-columns: 64px 1fr;
   gap: 22px;
   padding: 26px 0;
-  border-top: 1px solid rgba(35,40,31,0.14);
+  border-top: 1px solid rgba(27,34,51,0.16);
 }
-.program:last-child{ border-bottom: 1px solid rgba(35,40,31,0.14); }
+.program:last-child{ border-bottom: 1px solid rgba(27,34,51,0.16); }
 
-.program-mark{ color: var(--pine); }
+.program-mark{ color: var(--navy); }
 .program-mark svg{ width: 44px; height: 44px; }
 
-.program-copy p{ margin-bottom: 0; max-width: 60ch; color: rgba(35,40,31,0.85); }
+.program-copy p{ margin-bottom: 0; max-width: 60ch; color: rgba(27,34,51,0.85); }
 
 /* ---------- get involved ---------- */
 
-.involved{ padding: 56px 0; background: var(--pine-dark); color: var(--paper); }
+.involved{ padding: 56px 0; background: var(--navy-dark); color: var(--paper); }
 
 .involved h2{ color: var(--paper); }
 
@@ -288,12 +289,12 @@ blockquote cite{
   gap: 40px;
 }
 
-.involved-card p{ color: rgba(243,238,227,0.85); max-width: 42ch; }
+.involved-card p{ color: rgba(241,239,232,0.85); max-width: 44ch; }
 
-.involved .btn-primary{ background: var(--gold); color: var(--pine-dark); }
-.involved .btn-primary:hover{ background: #e0b143; }
+.involved .btn-primary{ background: var(--brass); color: var(--navy-dark); }
+.involved .btn-primary:hover{ background: #cba43c; }
 
-/* ---------- visit ---------- */
+/* ---------- compliance / contact ---------- */
 
 .visit{ padding: 56px 0 72px; }
 
@@ -301,7 +302,7 @@ blockquote cite{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
 
 .visit-details{ margin: 24px 0 0; }
@@ -309,22 +310,36 @@ blockquote cite{
   display: flex;
   gap: 14px;
   padding: 12px 0;
-  border-top: 1px solid rgba(35,40,31,0.14);
+  border-top: 1px solid rgba(27,34,51,0.16);
 }
 .visit-details dt{
-  width: 110px;
+  width: 120px;
   flex-shrink: 0;
-  color: rgba(35,40,31,0.6);
+  color: rgba(27,34,51,0.6);
   font-size: 0.92rem;
 }
 .visit-details dd{ margin: 0; }
 
-.visit-map svg{ width: 100%; height: auto; border-radius: 3px; }
+.compliance-box{
+  background: var(--paper-shade);
+  border-left: 3px solid var(--crimson);
+  padding: 22px 24px;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+.compliance-box p{ margin-bottom: 0.8em; }
+.compliance-box p:last-child{ margin-bottom: 0; }
+
+.placeholder-note{
+  font-size: 0.85rem;
+  font-style: italic;
+  color: rgba(27,34,51,0.6);
+}
 
 /* ---------- footer ---------- */
 
 .site-footer{
-  border-top: 1px solid rgba(35,40,31,0.14);
+  border-top: 1px solid rgba(27,34,51,0.16);
   padding: 32px 0;
 }
 
@@ -337,7 +352,7 @@ blockquote cite{
 }
 
 .footer-name{ font-family: var(--font-display); font-weight: 600; margin: 0; }
-.footer-tag{ margin: 2px 0 0; font-size: 0.88rem; color: rgba(35,40,31,0.65); }
+.footer-tag{ margin: 2px 0 0; font-size: 0.88rem; color: rgba(27,34,51,0.65); }
 
 .footer-nav{ display: flex; gap: 20px; }
 .footer-nav a{ text-decoration: none; font-size: 0.92rem; }
@@ -346,7 +361,7 @@ blockquote cite{
 
 @media (max-width: 860px){
   .hero-inner{ grid-template-columns: 1fr; }
-  .hero-art{ order: -1; max-width: 260px; margin: 0 auto; }
+  .hero-art{ order: -1; max-width: 240px; margin: 0 auto; }
   .involved-grid{ grid-template-columns: 1fr; }
   .visit-inner{ grid-template-columns: 1fr; }
   .stats-grid{ grid-template-columns: repeat(2, 1fr); }
@@ -364,13 +379,13 @@ blockquote cite{
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    border-bottom: 1px solid rgba(35,40,31,0.12);
+    border-bottom: 1px solid rgba(27,34,51,0.14);
   }
   .primary-nav.open{ display: flex; }
   .primary-nav a{
     width: 100%;
     padding: 14px 24px;
-    border-top: 1px solid rgba(35,40,31,0.08);
+    border-top: 1px solid rgba(27,34,51,0.1);
   }
   .nav-cta{ margin: 12px 24px; }
   .program{ grid-template-columns: 1fr; }
