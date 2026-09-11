@@ -1,4 +1,4 @@
-# Bright Line PAC — website
+# Chicago Abundance PAC
 
 A basic, static informational website for a political action
 committee: three files (`index.html`, `styles.css`, `script.js`), no
