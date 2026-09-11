@@ -294,48 +294,6 @@ blockquote cite{
 .involved .btn-primary{ background: var(--brass); color: var(--navy-dark); }
 .involved .btn-primary:hover{ background: #cba43c; }
 
-/* ---------- compliance / contact ---------- */
-
-.visit{ padding: 56px 0 72px; }
-
-.visit-inner{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
-}
-
-.visit-details{ margin: 24px 0 0; }
-.visit-details > div{
-  display: flex;
-  gap: 14px;
-  padding: 12px 0;
-  border-top: 1px solid rgba(27,34,51,0.16);
-}
-.visit-details dt{
-  width: 120px;
-  flex-shrink: 0;
-  color: rgba(27,34,51,0.6);
-  font-size: 0.92rem;
-}
-.visit-details dd{ margin: 0; }
-
-.compliance-box{
-  background: var(--paper-shade);
-  border-left: 3px solid var(--crimson);
-  padding: 22px 24px;
-  border-radius: 3px;
-  font-size: 0.95rem;
-}
-.compliance-box p{ margin-bottom: 0.8em; }
-.compliance-box p:last-child{ margin-bottom: 0; }
-
-.placeholder-note{
-  font-size: 0.85rem;
-  font-style: italic;
-  color: rgba(27,34,51,0.6);
-}
-
 /* ---------- footer ---------- */
 
 .site-footer{
@@ -363,7 +321,6 @@ blockquote cite{
   .hero-inner{ grid-template-columns: 1fr; }
   .hero-art{ order: -1; max-width: 240px; margin: 0 auto; }
   .involved-grid{ grid-template-columns: 1fr; }
-  .visit-inner{ grid-template-columns: 1fr; }
   .stats-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
