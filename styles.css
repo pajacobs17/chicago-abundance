@@ -198,7 +198,7 @@ button:focus-visible{
 }
 .btn-ghost:hover{ background: var(--ink); color: var(--paper); }
 
-.hero-art svg{ width: 100%; height: auto; max-width: 360px; display: block; margin: 0 auto; }
+.hero-art img{ width: 100%; height: auto; max-width: 360px; display: block; margin: 0 auto; }
 
 /* ---------- about ---------- */
 
